@@ -54,7 +54,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Token a3f1f7e29076fc6ecc4f3b49c7ee8e71c605a37c",
+						"value": "Token ***",
 						"type": "text"
 					},
 					{
@@ -95,7 +95,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Token a3f1f7e29076fc6ecc4f3b49c7ee8e71c605a37c",
+						"value": "Token ***",
 						"type": "text"
 					}
 				],
@@ -131,7 +131,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Token a3f1f7e29076fc6ecc4f3b49c7ee8e71c605a37c",
+						"value": "Token ***",
 						"type": "text"
 					}
 				],
@@ -167,7 +167,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Token a3f1f7e29076fc6ecc4f3b49c7ee8e71c605a37c",
+						"value": "Token ***",
 						"type": "text"
 					}
 				],
@@ -202,7 +202,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Token a3f1f7e29076fc6ecc4f3b49c7ee8e71c605a37c",
+						"value": "Token ***",
 						"type": "text"
 					}
 				],
@@ -237,7 +237,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Token a3f1f7e29076fc6ecc4f3b49c7ee8e71c605a37c",
+						"value": "Token ***",
 						"type": "text"
 					}
 				],
@@ -272,7 +272,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Token a3f1f7e29076fc6ecc4f3b49c7ee8e71c605a37c",
+						"value": "Token ***",
 						"type": "text"
 					}
 				],
@@ -307,7 +307,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Token a3f1f7e29076fc6ecc4f3b49c7ee8e71c605a37c",
+						"value": "Token ***",
 						"type": "text"
 					}
 				],
@@ -333,7 +333,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Token a3f1f7e29076fc6ecc4f3b49c7ee8e71c605a37c",
+						"value": "Token ***",
 						"type": "text"
 					}
 				],
@@ -393,12 +393,12 @@
 		},
 		{
 			"key": "token",
-			"value": "a3f1f7e29076fc6ecc4f3b49c7ee8e71c605a37c",
+			"value": "Token ***",
 			"type": "string"
 		},
 		{
 			"key": "agreement_id",
-			"value": "18a366ae-7808-4197-aeaf-55e472826172",
+			"value": "***",
 			"type": "string"
 		},
 		{
