@@ -1,1 +1,1 @@
-# postman_collections
+Примеры коллекций
