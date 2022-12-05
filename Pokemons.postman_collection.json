@@ -1,0 +1,354 @@
+{
+	"info": {
+		"_postman_id": "204052a7-577d-4f80-81fc-ae1143a11166",
+		"name": "Pokemons",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20694509"
+	},
+	"item": [
+		{
+			"name": "1.Обновление информации по тренеру",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "trainer_token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Leone Sextus Denys Oswolf Fraudatifilius Tollemache-Tollemache de Orellana Plantagenet Tollemache-Tollemache Leone Sextus Denys Oswolf Fraudatifilius Tollemache-Tollemache de Orellana Plantagenet Tollemache-Tollemache Leone Sextus Denys Oswolf Fraudatifilius Tollemache-Tollemache de Orellana Plantagenet Tollemache-Tollemache Leone Sextus Denys Oswolf Fraudatifilius Tollemache-Tollemache de Orellana Plantagenet Tollemache-Tollemache\",\r\n    \"city\": \"Leone Sextus Denys Oswolf Fraudatifilius Tollemache-Tollemache de Orellana Plantagenet Tollemache-Tollemache\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}trainers",
+					"host": [
+						"{{url}}trainers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Информация во всем тренерам",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}trainers",
+					"host": [
+						"{{url}}trainers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.Покупка услуги «Сменить фото тренера»",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "trainer_token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"card_number\": \"4620869113632996\",\r\n    \"card_csv\": \"321\",\r\n    \"card_actual\": \"10/12\",\r\n\t  \"num\": \"56456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}trainers/ChangeAvatar",
+					"host": [
+						"{{url}}trainers"
+					],
+					"path": [
+						"ChangeAvatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4.Создание покемона",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "trainer_token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Amogus3\",\r\n    \"photo\": \"https://wonder-day.com/wp-content/uploads/2020/10/wonder-day-among-us-png-29.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}pokemons",
+					"host": [
+						"{{url}}pokemons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5.Информация по всем покемонам",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}pokemons",
+					"host": [
+						"{{url}}pokemons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6.Изменить покемона",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "trainer_token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pokemon_id\": 1214,\r\n    \"name\": \"Amogus\",\r\n    \"photo\": \"https://wonder-day.com/wp-content/uploads/2020/10/wonder-day-among-us-png-29.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}pokemons",
+					"host": [
+						"{{url}}pokemons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7.Поймать покемона в покебол",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "trainer_token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pokemon_id\": \"1215\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}trainers/addPokebol",
+					"host": [
+						"{{url}}trainers"
+					],
+					"path": [
+						"addPokebol"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8.Выселить покемона из покебола",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "trainer_token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pokemon_id\": \"1215\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}trainers/deletePokebol",
+					"host": [
+						"{{url}}trainers"
+					],
+					"path": [
+						"deletePokebol"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9.Вызвать на битву другого покемона",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "trainer_token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"attacking_pokemon\": \"1213\",\r\n    \"defending_pokemon\": \"1198\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}battle",
+					"host": [
+						"{{url}}battle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10.Получение списка прошедших битв",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}battles",
+					"host": [
+						"{{url}}battles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11.Ошибка 500",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}debug-sentry",
+					"host": [
+						"{{url}}debug-sentry"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});",
+					"",
+					"pm.test(\"Test-Json\", function () {",
+					"    pm.response.to.have.jsonBody();",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://pokemonbattle.me:5000/",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "372cf9e0863755f465d041d3c3eb54e3",
+			"type": "string"
+		}
+	]
+}
